@@ -13,6 +13,7 @@
     --fs-0: .5rem;
     --fs-1: .9375rem;
     --fs-2: 1.25rem;
+    --fs-3: 1rem;
 
     --pd-paragraph: 0 50px 0 0;
 }
@@ -96,8 +97,23 @@
     flex-direction: column;
 }
 
-.wrapper_form[name=] {
-    background-color: #000;
+.wrapper_form input[input-name="name"] {
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: .3rem;
+    border: .5px solid var(--clr-obrigatorio);
+}
+
+.wrapper_form textarea[textarea="textarea"] {
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: .3rem;
+    border: .5px solid var(--clr-obrigatorio);
+}
+
+.wrapper_form .mandatory {
+    color: var(--clr-obrigatorio);
+    margin-bottom: 20px;
 }
 
 .wrapper_form-container .btn {
@@ -108,5 +124,41 @@
     border-radius: .3rem;
     color: var(--clr-text);
     font-weight: 900;
+    height: 40px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.wrapper_form-container .btn:hover {
+    background-color: #1c9158;
+}
+
+@media(max-width: 850px) {
+    .container {
+        margin: auto 20px;
+    }
+
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    .wrapper_info {
+        text-align: left;
+        font-size: var(--fs-2);
+    }
+
+    .wrapper_info-titlle {
+        text-align: center;
+    }
+
+    .wrapper_info-subtitle {
+        text-align: center;
+    }
+
+    .wrapper_info-paragraph {
+       text-align: center;
+       padding: 0 10px;  
+    }
+
 }
 
