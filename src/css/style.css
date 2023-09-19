@@ -102,13 +102,26 @@
     margin-bottom: 15px;
     border-radius: .3rem;
     border: .5px solid var(--clr-obrigatorio);
+    padding: 0 10px;
+    outline: none;
 }
 
+.wrapper_form input[input-name="name"]::placeholder {
+    color: var(--clr-placehold);
+}
+
+    
 .wrapper_form textarea[textarea="textarea"] {
     height: 100px;
     margin-bottom: 15px;
     border-radius: .3rem;
     border: .5px solid var(--clr-obrigatorio);
+    padding: 5px 10px;
+    outline: none;
+}
+
+.wrapper_form textarea[textarea="textarea"]::placeholder {
+    color: #A8A8A8;
 }
 
 .wrapper_form .mandatory {
@@ -161,4 +174,9 @@
     }
 
 }
+
+@media(max-width: 600px) {
+
+}
+
 
