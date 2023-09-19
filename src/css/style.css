@@ -60,7 +60,6 @@
     width: 800px;
     height: 402px;
     background-image: url(../img/bg.png);
-    background-repeat: repeat-x;
 }
 
 .wrapper_info {
@@ -175,7 +174,32 @@
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 550px) {
+    .wrapper {
+        padding: 40px 0px;
+        flex-direction: column;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top -800px;
+    }
+
+    .wrapper_info {
+        width: 310px;
+    }
+
+    .wrapper_info-subtitle {
+        font-size: var(--fs-1);
+    }
+
+    .wrapper_info-paragraph {
+        font-size: 12px;
+    }
+
+    .wrapper_form-container {
+        height: auto;
+        background-color: transparent;
+    }
 
 }
 
